@@ -5,8 +5,5 @@ analyzer:
     undefined_method: error
     undefined_getter: error
     undefined_identifier: error
-
-analyzer:
-  errors:
     curly_braces_in_flow_control_structures: ignore
     deprecated_member_use: ignore
