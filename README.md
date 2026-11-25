@@ -1,7 +1,14 @@
-# APP-006 — Makro 360 (development, not yet a released package)
+# Makro Besin Hesaplayıcı · Macro Calculator
 
-Offline-first macro dashboard, custom foods, meal history, goal percentages and grams, weekly analysis, international-digit parsing, privacy-conscious local secure storage and validated JSON import/export. Targets are general tracking examples, **not personalized medical prescriptions**.
+Protein, karbonhidrat ve yağ hedefi · Protein, carb and fat targets
 
-Run `flutter create --platforms=android,ios --project-name makro_360 .`, then `flutter pub get`, `dart format lib test`, `flutter analyze`, `flutter test`, `flutter build apk --debug`. GitHub Actions runs these steps after a source upload.
+Sağlık ve Spor ailesinin uygulaması. Çevrimdışı çalışır; telefon, tablet ve web.
+Gerçek uygulama ortak motordadır: [saglik-motoru](https://github.com/taktemurr-ops/saglik-motoru); çatı ve
+reklam/satın alma/gizlilik: [studio-core](https://github.com/taktemurr-ops/studio-core) (`lib/apps`).
+Merkez uygulama: [merkez-saglik-ve-spor](https://github.com/taktemurr-ops/merkez-saglik-ve-spor).
 
-**Not release complete:** native device validation, localization, production monetization, store metadata, accessibility review and original 20-module catalogue acceptance are required. The source is not to be represented as final until those are verified.
+**Tıbbi cihaz değildir**; teşhis, tedavi ya da doz önermez. Her ekranda esenlik uyarısı görünür. Veriler yalnızca cihazda saklanır.
+
+> Bu depo önceden bağımsız bir uygulamaydı (`app-006`). Sağlık ve Spor çatısına taşındı; eski
+> sürümün kodu git geçmişinde duruyor. Özellikleri motora aktarıldı (enerji tahmini, hedef, makro dağılımları, besin değerine bakma; alt sınır korumalı).
+> GitHub'da depo adı `uyg-makro-besin-hesaplayici` olarak değiştirilebilir (eski adresler yönlendirilir).

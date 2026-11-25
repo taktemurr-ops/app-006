@@ -1,19 +1,24 @@
-name: makro_360
-description: Offline-first macronutrient tracker and goal planner.
+name: uyg_makro_besin_hesaplayici
+description: "Makro Besin Hesaplayıcı – Sağlık ve Spor uygulaması (studio_core/apps + saglik_motoru)."
 publish_to: none
-version: 0.1.0+1
+version: 2.0.0
+
 environment:
-  sdk: '>=3.5.0 <4.0.0'
+  sdk: ">=3.6.0 <4.0.0"
+
 dependencies:
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
-  intl: ^0.20.2
-  flutter_secure_storage: ^9.2.4
+  studio_core:
+    git:
+      url: https://github.com/taktemurr-ops/studio-core
+      ref: 92b51dd7d47c300d3611c448b5474fca5f793f2a
+  saglik_motoru:
+    git:
+      url: https://github.com/taktemurr-ops/saglik-motoru
+      ref: main
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
-flutter:
-  uses-material-design: true
+  flutter_lints: ^5.0.0
